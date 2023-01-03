@@ -1,0 +1,10 @@
+{
+	"id": "obsidian-antidote-plugin",
+	"name": "Antidote Plugin",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "This is a plugin that integrates Antidote with Obsidian.",
+	"author": "Samuel Martineau",
+	"authorUrl": "https://smartineau.me",
+	"isDesktopOnly": true
+}

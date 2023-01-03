@@ -1,0 +1,36 @@
+{
+	"name": "obsidian-antidote-plugin",
+	"version": "1.0.0",
+	"description": "This is a plugin that integrates Antidote with Obsidian.",
+	"main": "main.js",
+	"scripts": {
+		"dev": "node esbuild.config.mjs",
+		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+		"version": "node version-bump.mjs && git add manifest.json versions.json",
+		"lint": "eslint --ext .ts",
+		"lint:fix": "eslint --fix --ext .ts"
+	},
+	"keywords": [],
+	"author": {
+		"name": "Samuel Martineau",
+		"url": "https://smartineau.me",
+		"email": "samumartineau@gmail.com"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^16.11.6",
+		"@types/ws": "^8.5.4",
+		"@typescript-eslint/eslint-plugin": "5.29.0",
+		"@typescript-eslint/parser": "5.29.0",
+		"builtin-modules": "3.3.0",
+		"esbuild": "0.14.47",
+		"eslint": "^8.31.0",
+		"obsidian": "latest",
+		"tslib": "2.4.0",
+		"typescript": "4.7.4"
+	},
+	"dependencies": {
+		"bplist-parser": "^0.3.2",
+		"ws": "^8.11.0"
+	}
+}
